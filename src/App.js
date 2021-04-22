@@ -3,6 +3,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import RadioButtons from './RadioDes';
+import TextField from '@material-ui/core/TextField';
 
 export default function App() {
   return (
@@ -27,7 +28,7 @@ export default function App() {
           <Card>
             <div>
               <h2 className="Head">Questionnaire Detail</h2>
-              <input></input>
+              <TextField required id="standard-required" label="Name" defaultValue="Name"></TextField>
             </div>
           </Card>
           <hr />
@@ -35,7 +36,8 @@ export default function App() {
         <Card>
           <div className="form-group">
             <h2 className="questionNumber">Question1</h2>
-            <input type="text" className="form-control" name="question" autocomplete="off" />
+            <TextField required id="standard-required" label="Question" defaultValue="Question"></TextField>
+            {/* <input type="text" className="form-control" name="question" autocomplete="off" /> */}
           </div>
           <div>
             <RadioButtons></RadioButtons>
