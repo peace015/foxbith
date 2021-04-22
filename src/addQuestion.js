@@ -2,17 +2,12 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import TextField from '@material-ui/core/TextField';
 
-export default function addQuestion() {
+export default function AddQuestion() {
   return (
     <Card>
       <div>
-        <h2 className="Head">Question1</h2>
-        <FormControl component="fieldset">
-          <RadioGroup value={value} onChange={handleChange}>
-            <FormControlLabel value="Description" control={<Radio />} label="Description" />
-            <TextField required id="standard-required" label="Required" defaultValue="Description"></TextField>
-          </RadioGroup>
-        </FormControl>
+        <h2 className="Head">Question</h2>
+        <TextField required id="standard-required" label="Question" defaultValue="Question"></TextField>
       </div>
     </Card>
   );

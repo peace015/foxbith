@@ -5,7 +5,7 @@ export default function Questionnaire() {
   return (
     <Card>
       <div>
-        <h2 className="Head">Questionnaire</h2>
+        <h2 className="Head">Questionnaire Detail</h2>
         <input></input>
       </div>
     </Card>
